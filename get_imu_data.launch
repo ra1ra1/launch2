@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="pimouse_slam" name="keyboard_cmd_vel" type="keyboard_cmd_vel.py" required="true" />
+  <!-- node pkg="pimouse_slam" name="control" type="control.py" required="true" / -->
+  <node pkg="pimouse_slam" name="motors" type="motors.py" required="true" />
+  <!-- node pkg="pimouse_slam" name="get_imu_data" type="get_imu_data.py" required="true" / -->
+  <node pkg="rt_usb_9axisimu_driver" name="rt_usb_9axisimu_driver" type="rt_usb_9axisimu_driver" required="true" />
+  <!-- node pkg="pimouse_slam" name="imu" type="imu.py" required="true" / -->
+</launch> 
